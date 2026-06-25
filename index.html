@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Temel SEO Meta Etiketleri -->
+  <title>Karolar Hayvancılık | Küresel Canlı Hayvan Tedariği ve İhracatı</title>
+  <meta name="description" content="Karolar Hayvancılık ile yüksek genetik kalitede damızlık, besi ve canlı hayvan tedariği. Uluslararası standartlarda güvenilir, sağlıklı ve profesyonel hayvancılık çözümleri." />
+  <meta name="keywords" content="karolar hayvancılık, karo livestock, canlı hayvan ithalatı, damızlık düve, besi danası, angus ithalatı, büyükbaş hayvancılık, kaliteli canlı hayvan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://karolar.com/" />
+  <meta name="theme-color" content="#111612" />
+
+  <!-- Open Graph / Meta Protokolleri (Sosyal Medya Görünümü) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Karolar Hayvancılık | Küresel Canlı Hayvan Tedariği" />
+  <meta property="og:description" content="Yüksek genetik kalitede damızlık ve besi hayvanı tedariği. Uluslararası standartlarda profesyonel hayvancılık çözümleri." />
+  <meta property="og:url" content="https://karolar.com/" />
+  <meta property="og:site_name" content="Karolar Hayvancılık" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Twitter Card Meta Etiketleri -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karolar Hayvancılık | Küresel Canlı Hayvan Tedariği" />
+  <meta name="twitter:description" content="Yüksek genetik kalitede damızlık ve besi hayvanı tedariği. Uluslararası standartlarda profesyonel hayvancılık çözümleri." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Favicon Tanımlaması (Canlı Hayvan/Tarım Temalı SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐂</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐂</text></svg>" />
+
+  <!-- Yazı Tipleri (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Kurumsal Şema Verisi (JSON-LD Structured Data) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WholesaleStore",
+      "name": "Karolar Hayvancılık",
+      "description": "Uluslararası canlı hayvan tedariği ve yüksek genetik kaliteli büyükbaş ihracatı.",
+      "url": "https://karolar.com/",
+      "logo": "https://karolar.com/logo.png",
+      "image": "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1200&auto=format&fit=crop",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TR"
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #111612; /* Kurumsal Premium Tarım Yeşili/Siyah Tonu */
+      --surface: #1b221d;
+      --surface-light: #252e27;
+      --text-light: #ffffff;
+      --text-muted: #a3b1a6;
+      --accent-gold: #c5a880; /* Premium Sektörel Altın/Bronz Tonu */
+      --accent-hover: #d9be98;
+      --font-serif: 'Playfair Display', serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --container: min(1240px, calc(100vw - 48px));
+      --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Kurumsal Yapışkan Menü (Header) */
+    .main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(17, 22, 18, 0.85);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .header-container {
+      width: var(--container);
+      margin: 0 auto;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-logo span {
+      color: var(--accent-gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-item {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      opacity: 0.8;
+      transition: var(--transition);
+    }
+
+    .nav-item:hover {
+      color: var(--accent-gold);
+      opacity: 1;
+    }
+
+    .header-cta .nav-btn {
+      padding: 12px 24px;
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .header-cta .nav-btn:hover {
+      background: var(--accent-gold);
+      color: var(--bg-dark);
+    }
+
+    /* Hero Alanı (Giriş) */
+    .hero-wrapper {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      padding-top: 90px;
+    }
+
+    .hero-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 8% 0 12%;
+      background: linear-gradient(145deg, #131a15 0%, #0d120f 100%);
+    }
+
+    .hero-tagline {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--accent-gold);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+      line-height: 1.15;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .hero-headline em {
+      font-style: italic;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .hero-paragraph {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 44px;
+      max-width: 500px;
+    }
+
+    /* Master Buton Yapısı */
+    .master-btn {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 36px;
+      background: var(--accent-gold);
+      color: var(--bg-dark);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      transition: var(--transition);
+      border: 1px solid var(--accent-gold);
+    }
+
+    .master-btn:hover {
+      background: transparent;
+      color: var(--text-light);
+      border-color: var(--text-light);
+    }
+
+    .master-btn svg {
+      transition: transform 0.3s ease;
+    }
+
+    .master-btn:hover svg {
+      transform: translateX(5px);
+    }
+
+    .hero-media {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(80%) contrast(105%);
+      transition: transform 8s ease;
+    }
+
+    .hero-wrapper:hover .hero-media img {
+      transform: scale(1.04);
+    }
+
+    /* Öne Çıkan Değerler / Sayılar */
+    .stats-section {
+      padding: 100px 0;
+      background: var(--surface);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .stats-container {
+      width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .stat-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Irklar ve Ürün Grupları (Grid Altyapısı) */
+    .catalog-section {
+      padding: 120px 0;
+    }
+
+    .catalog-container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 70px;
+    }
+
+    .catalog-subtitle {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: block;
+      font-weight: 700;
+    }
+
+    .catalog-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 500;
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .catalog-card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      transition: var(--transition);
+    }
+
+    .catalog-card:hover {
+      border-color: rgba(197, 168, 128, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .card-thumb {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .catalog-card:hover .card-thumb img {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent-gold);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card-name {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .card-action {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-light);
+      transition: color 0.3s;
+    }
+
+    .catalog-card:hover .card-action {
+      color: var(--accent-gold);
+    }
+
+    /* Geniş Kurumsal CTA Alanı */
+    .action-banner {
+      position: relative;
+      padding: 140px 0;
+      background: linear-gradient(rgba(17, 22, 18, 0.5), rgba(17, 22, 18, 0.85)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1800&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+    }
+
+    .banner-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .banner-content h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 500;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .banner-content p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 36px;
+    }
+
+    .banner-content .master-btn {
+      align-self: center;
+      margin: 0 auto;
+    }
+
+    /* Kurumsal Footer (Alt Bilgi) */
+    .main-footer {
+      background: #0b0e0c;
+      padding: 100px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .footer-container {
+      width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 80px;
+    }
+
+    .footer-about h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+
+    .footer-about h3 span {
+      color: var(--accent-gold);
+    }
+
+    .footer-about p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-size: 0.9rem;
+      max-width: 300px;
+    }
+
+    .footer-column h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .footer-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-menu a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .footer-menu a:hover {
+      color: var(--text-light);
+      padding-left: 4px;
+    }
+
+    .footer-meta {
+      width: var(--container);
+      margin: 0 auto;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Responsive Tasarım Kuralları */
+    @media (max-width: 1024px) {
+      .hero-wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .hero-info {
+        padding: 80px 24px;
+      }
+      .hero-media {
+        height: 45vh;
+      }
+      .stats-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
+      .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .footer-meta {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasyon Alanı -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="https://karolivestock.com" class="brand-logo">
+        Karolar<span>Livestock</span>
+      </a>
+      <nav aria-label="Ana Menü">
+        <ul class="nav-links">
+          <li><a href="https://karolivestock.com" class="nav-item">Kurumsal</a></li>
+          <li><a href="https://karolivestock.com" class="nav-item">Canlı Hayvan</a></li>
+          <li><a href="https://karolivestock.com" class="nav-item">Irklarımız</a></li>
+          <li><a href="https://karolivestock.com" class="nav-item">Lojistik</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="https://karolivestock.com" class="nav-btn">Teklif Alın</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Giriş Bölümü (Hero) -->
+    <section class="hero-wrapper" aria-label="Giriş">
+      <div class="hero-info">
+        <span class="hero-tagline">Küresel Hayvancılık Standartları</span>
+        <h1 class="hero-headline">Güvenilir kaynaklardan <em>üstün genetik</em> seçimi.</h1>
+        <p class="hero-paragraph">
+          Uluslararası ağımız ve karantina tesislerimizle, işletmeniz için en sağlıklı ve yüksek verimli büyükbaş hayvan tedariğini kusursuz lojistik çözümleriyle sunuyoruz.
+        </p>
+        <a href="https://karolivestock.com" class="master-btn">
+          Kataloğu İnceleyin
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1000&auto=format&fit=crop" alt="Karolar Hayvancılık geniş mera büyükbaş canlı hayvan görünümü" />
+      </div>
+    </section>
+
+    <!-- Kurumsal İstatistikler -->
+    <section class="stats-section" aria-label="Başarı Oranlarımız">
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-number">%100</div>
+          <div class="stat-label">Veteriner Kontrolü</div>
+          <div class="stat-desc">Tüm canlı hayvan sevkiyatlarımız uzman hekimlerimizin tam denetimi ve sağlık onayından geçer.</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Global Tedarik Ağı</div>
+          <div class="stat-desc">Dünyanın en prestijli hayvancılık bölgelerinden seçilmiş üst düzey ırk portföyü.</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">Milyon+</div>
+          <div class="stat-label">Güvenli Lojistik</div>
+          <div class="stat-desc">Uluslararası taşımacılık standartlarına uygun, hayvan refahını ön planda tutan transfer süreçleri.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ürün Grupları ve Irklar -->
+    <section class="catalog-section" aria-label=" Canlı Hayvan Çözümleri">
+      <div class="catalog-container">
+        <div class="catalog-header">
+          <div>
+            <span class="catalog-subtitle">Seçkin Portföy</span>
+            <h2 class="catalog-title">Canlı Hayvan Kategorileri</h2>
+          </div>
+          <a href="https://karolivestock.com" class="master-btn" style="padding: 12px 26px; font-size: 0.8rem;">Tüm Çözümler</a>
+        </div>
+
+        <div class="catalog-grid">
+          
+          <!-- Kart 1 -->
+          <article class="catalog-card">
+            <div class="card-thumb">
+              <img src="https://images.unsplash.com/photo-1543871595-e111797a1d1f?q=80&w=600&auto=format&fit=crop" alt="Damızlık Düve Tedariği" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Yüksek Süt & Döl Verimi</span>
+              <h3 class="card-name">Damızlık Düveler</h3>
+              <p class="card-text">İşletmenizin geleceğini garanti altına alan, adaptasyon kabiliyeti yüksek ve pedigrili damızlık hayvan tedariği.</p>
+              <a href="https://karolivestock.com" class="card-action">Detayları İncele &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Kart 2 -->
+          <article class="catalog-card">
+            <div class="card-thumb">
+              <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=600&auto=format&fit=crop" alt="Besi Danası İthalatı" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Maksimum Canlı Kilo Artışı</span>
+              <h3 class="card-name">Besi Danaları</h3>
+              <p class="card-text">Yem dönüşüm oranı yüksek, hızlı gelişim gösteren ve et kalitesi tescillenmiş birinci sınıf besi materyalleri.</p>
+              <a href="https://karolivestock.com" class="card-action">Detayları İncele &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Kart 3 -->
+          <article class="catalog-card">
+            <div class="card-thumb">
+              <img src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?q=80&w=600&auto=format&fit=crop" alt="Angus ve Simmental Özel Irklar" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Üst Düzey Genetik Sınıf</span>
+              <h3 class="card-name">Özel Etçil Irklar</h3>
+              <p class="card-text">Dünyaca kabul görmüş Angus, Hereford ve Simmental gibi safkan etçil ırkların doğrudan üreticiden tedariği.</p>
+              <a href="https://karolivestock.com" class="card-action">Detayları İncele &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Büyük Eylem Çağrısı (CTA Banner) -->
+    <section class="action-banner" aria-label="Kurumsal İletişim Çağrısı">
+      <div class="banner-content">
+        <h2>B2B Toptan Canlı Hayvan İthalat Talebi</h2>
+        <p>Çiftliğiniz veya projeniz için ihtiyaç duyduğunuz teknik şartnameye uygun canlı hayvan adet, zamanlama ve fiyatlandırma planlaması için uzman ekibimizle görüşün.</p>
+        <a href="https://karolivestock.com" class="master-btn">Kurumsal Talep Formu</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Alt Bilgi Alanı (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Karolar<span>Livestock</span></h3>
+        <p>Küresel tarım ve hayvancılık standartlarında üst düzey tedarik zinciri yönetimi ve canlı büyükbaş ihracatı.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Kurumsal Hizmetler</h4>
+        <ul class="footer-menu">
+          <li><a href="https://karolivestock.com">Damızlık Seçimi</a></li>
+          <li><a href="https://karolivestock.com">Besi Danası Dağıtımı</a></li>
+          <li><a href="https://karolivestock.com">Karantina Yönetimi</a></li>
+          <li><a href="https://karolivestock.com">Uluslararası Lojistik</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Yasal Bilgiler</h4>
+        <ul class="footer-menu">
+          <li><a href="https://karolivestock.com">Gizlilik Politikası</a></li>
+          <li><a href="https://karolivestock.com">Kullanım Şartları</a></li>
+          <li><a href="https://karolivestock.com">Uluslararası Mevzuatlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>İletişim & Erişim</h4>
+        <ul class="footer-menu">
+          <li><a href="https://karolivestock.com">Merkez Ofis Bilgileri</a></li>
+          <li><a href="https://karolivestock.com">Veteriner Departmanı</a></li>
+          <li><a href="https://karolivestock.com">Müşteri Destek Masası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; 2026 Karolar Hayvancılık. Tüm hakları saklıdır. Uluslararası canlı hayvan tedarik altyapısı.</span>
+      <span><a href="https://karolivestock.com" style="text-decoration: underline; color: var(--accent-gold);">Karo Livestock Gateway</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
